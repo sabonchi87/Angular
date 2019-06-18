@@ -1,0 +1,24 @@
+
+
+<table >
+  <thead>
+  <tr><th>Name</th><th>Message</th></tr>
+</thead>
+<tbody>
+  <tr *ngFor="let entries of  tasksServ.entries;index as i">
+    <td>{{entries.name}}</td>
+    <td>{{entries.message}}</td>
+    <td> <button (click)="Delete(i)" >Delete</button></td>
+  </tr>
+</tbody>
+<tr><a  routerLink="/add-entry">Add Entry</a></tr>
+</table>
+
+
+
+  
+  
+
+
+
+
